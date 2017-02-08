@@ -24,7 +24,7 @@ $ ./convert_ti_ble_sdk_2_02_01_18_to_linux.sh ~/ti/
 
 ## Installing CCS and SDK (Linux)
 
-Note: Guide is out of date. Covers v2.1 SDK instead of v2.2.
+Note: TI's guide is out of date. Covers v2.1 SDK instead of v2.2.
 http://processors.wiki.ti.com/index.php/Building_BLE_Projects_on_Linux
 
 * SDK Version: v2.2.1 [Release Notes"](ttp://focus.ti.com/download/freetools/release_notes_BLE_Stack_2_2_1.html#Installation)
