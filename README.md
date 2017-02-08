@@ -1,7 +1,8 @@
 # TI_BLE_CC2650_Linux_Convert
 Conversion script to allow building CC2650 code on linux with Code Composer v6.2+ (CCS)
 
-Source: E2E - Is there a BLE-stack installer for linux? https://e2e.ti.com/support/wireless_connectivity/bluetooth_low_energy/f/538/p/412962/1911528#1911528
+Source: [E2E - Is there a BLE-stack installer for linux?](https://e2e.ti.com/support/wireless_connectivity/bluetooth_low_energy/f/538/p/412962/1911528#1911528)
+
 Original Author: Norman Mackenzie
 
 Note: TI has a wiki on trying to build on Linux but as of this writing (02/08/2017) it is out of date.  Describes building version v2.1 of the SDK.  http://processors.wiki.ti.com/index.php/Building_BLE_Projects_on_Linux
@@ -26,11 +27,11 @@ $ ./convert_ti_ble_sdk_2_02_01_18_to_linux.sh ~/ti/
 Note: Guide is out of date. Covers v2.1 SDK instead of v2.2.
 http://processors.wiki.ti.com/index.php/Building_BLE_Projects_on_Linux
 
-SDK Version: v2.2.1 [Release Notes"](ttp://focus.ti.com/download/freetools/release_notes_BLE_Stack_2_2_1.html#Installation)
-CCS Version: v6.2+ [Download](http://processors.wiki.ti.com/index.php/Download_CCS#Code_Composer_Studio_Version_6_Downloads)
-TI ARM Compiler: TI ARM Compiler v5.2.6
-TI-RTOS version: 2.20.01.08 [Download](http://software-dl.ti.com/dsps/dsps_public_sw/sdo_sb/targetcontent/tirtos/index.html)
-XDC Tools: 3.32.00.06
+* SDK Version: v2.2.1 [Release Notes"](ttp://focus.ti.com/download/freetools/release_notes_BLE_Stack_2_2_1.html#Installation)
+* CCS Version: v6.2+ [Download](http://processors.wiki.ti.com/index.php/Download_CCS#Code_Composer_Studio_Version_6_Downloads)
+* TI ARM Compiler: TI ARM Compiler v5.2.6
+* TI-RTOS version: 2.20.01.08 [Download](http://software-dl.ti.com/dsps/dsps_public_sw/sdo_sb/targetcontent/tirtos/index.html)
+* XDC Tools: 3.32.00.06
 
 ```bash
 tar xzf CCS6.2.0.00050_linux-x64.tar.gz
