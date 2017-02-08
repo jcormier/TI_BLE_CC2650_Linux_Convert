@@ -8,3 +8,7 @@ Please if you find problems with this project, fork it and create a pull request
 
 Tested:
 * simple_peripheral_cc2650lp
+
+Note: TI has a wiki on trying to build on Linux but as of this writing (02/08/2017) it is out of date.  Describes building version v2.1 of the SDK.  http://processors.wiki.ti.com/index.php/Building_BLE_Projects_on_Linux
+
+The wiki states "building the BLE-Stack SDK is not officially supported on Linux host platforms"
