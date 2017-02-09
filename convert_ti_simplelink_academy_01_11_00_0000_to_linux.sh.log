@@ -1,0 +1,65 @@
+ $ ./TI_BLE_CC2650_Linux_Convert/convert_ti_ble_sdk_2_02_01_18_to_linux.sh ~/ti/
+Changing SRC_COMMON\/hal\/src\/target\/_common\/board.h to SRC_EX\/target\/Board.h in all ble_sdk source files
+sed: no input files
+Changing \"board\.h to \"Board.h in all ble_sdk source files
+sed: no input files
+Changing \/board\.h to \/Board.h in all ble_sdk source files
+sed: no input files
+Changing <board\.h to <Board.h in all ble_sdk source files
+sed: no input files
+mv: missing file operand
+Try 'mv --help' for more information.
+Changing DisplayUART\.h to DisplayUart.h in all ble_sdk source files
+sed: no input files
+Changing DisplayUART\.c to DisplayUart.c in all ble_sdk source files
+sed: no input files
+Changing hal_UART\.h to hal_uart.h in all ble_sdk source files
+sed: no input files
+Changing ICall\.h to icall.h in all ble_sdk source files
+sed: no input files
+Changing OSAL\.h to osal.h in all ble_sdk source files
+sed: no input files
+Changing OSAL_Tasks\.h to osal_tasks.h in all ble_sdk source files
+sed: no input files
+Changing OSAL_Memory\.h to osal_memory.h in all ble_sdk source files
+sed: no input files
+Changing OSAL_Timers\.h to osal_timers.h in all ble_sdk source files
+sed: no input files
+Changing ti\/drivers\/rf\/rf.h to ti\/drivers\/rf\/RF.h in all ble_sdk source files
+sed: no input files
+Changing sensorTag\.h to sensortag.h in all ble_sdk source files
+sed: no input files
+Changing sensortag_Display\.h to sensortag_display.h in all ble_sdk source files
+sed: no input files
+Changing npi_tl_SPI\.c to npi_tl_spi.c in all ble_sdk source files
+sed: no input files
+Changing npi_tl_SPI\.h to npi_tl_spi.h in all ble_sdk source files
+sed: no input files
+Changing npi_tl_UART\.c to npi_tl_uart.c in all ble_sdk source files
+sed: no input files
+Changing npi_tl_UART\.h to npi_tl_uart.h in all ble_sdk source files
+sed: no input files
+Changing bsp_SPI\.c to bsp_spi.c in all ble_sdk source files
+sed: no input files
+Changing bsp_SPI\.h to bsp_spi.h in all ble_sdk source files
+sed: no input files
+Changing driverLib\/timer.h to driverlib\/timer.h in all ble_sdk source files
+sed: no input files
+Changing driverLib\/timer.h to driverlib\/timer.h in all tirtos source files
+grep: driverLib\/timer.h: No such file or directory
+Changing file:\/C:\/ti to $\{PARENT-7-ORG_PROJ_DIR\} in all ble_sdk source files
+sed: no input files
+Changing PARENT-5-PROJECT_LOC\/src\/examples\/sensortag to SRC_EX\/examples\/sensortag in all ble_sdk source files
+sed: no input files
+Changing PARENT-5-PROJECT_LOC\/src\/profiles\/sensor_profile to SRC_EX\/profiles\/sensor_profile in all ble_sdk source files
+sed: no input files
+Changing PARENT-1-PROJECT_LOC\/config\/ to PARENT-2-ORG_PROJ_DIR\/ccs\/config\/ in all ble_sdk source files
+sed: no input files
+Changing \rom\c_lib\cc26xx_ecc_rom_api.a to \/rom\/enc_lib\/cc26xx_ecc_rom_api.a in all ble_sdk source files
+sed: no input files
+Changing &quot;\${TOOLS_BLE}\/lib_search\/lib_search.exe to python \&quot;\${TOOLS_BLE}\/lib_search\/src\/lib_search.py in all ble_sdk source files
+sed: no input files
+Changing &quot;\${TI_BLE_SDK_BASE}\/tools\/lib_search\/lib_search.exe to python \&quot;\${TI_BLE_SDK_BASE}\/tools\/lib_search\/src\/lib_search.py in all ble_sdk source files
+sed: can't read /home/jcormier/ti//simplelink_academy_01_11_00_0000/modules/tools/lib_search/params_split_cc2640.xml: No such file or directory
+sed: can't read /home/jcormier/ti//simplelink_academy_01_11_00_0000/modules/tools/lib_search/params_split_cc1350.xml: No such file or directory
+
