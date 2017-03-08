@@ -50,7 +50,14 @@ wine ble_sdk_2_02_01_18_setup.exe
 Download location for sdk: http://www.ti.com/tool/ble-stack?DCMP=wbu-blestack&HQS=ble-stack
 
 Building Project with Code Composer Studio [2.6.3 Code Composer Studio](http://www.ti.com/lit/ug/swru393d/swru393d.pdf)
+
 [2.6.3.3.1 Import an Existing Project](http://www.ti.com/lit/ug/swru393d/swru393d.pdf)
+
+When creating a new project based on the SDK, I suspect the recommended approach is to copy one of the existing examples and rename it. 
+
+The links to the SDK are found in the "Link Resources" section of the project properties.  The example projects provided by the SDK all assume the SDK is located relative to their location, which is not ideal.  However if you look at the project_zero example which is provided separate of the SDK (see below), they created a TI_BLE_SDK_BASE variable which the other variables use to find the SDK instead of expecting it to be relative to the project directory.
+
+Note: This relative path problem seems to be resolved by CCS when you mark "copy projects into workspace" by creating a ORG_PROJ_DIR variable and using that to resolve all the paths.
 
 ## Updated simplelink academy
 
