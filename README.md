@@ -50,6 +50,7 @@ wine ble_sdk_2_02_01_18_setup.exe
 Download location for sdk: http://www.ti.com/tool/ble-stack?DCMP=wbu-blestack&HQS=ble-stack
 
 Building Project with Code Composer Studio [2.6.3 Code Composer Studio](http://www.ti.com/lit/ug/swru393d/swru393d.pdf)
+[2.6.3.3.1 Import an Existing Project](http://www.ti.com/lit/ug/swru393d/swru393d.pdf)
 
 ## Updated simplelink academy
 
