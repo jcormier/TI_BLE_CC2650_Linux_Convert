@@ -102,7 +102,7 @@ function replace_text_in_ble_sdk {
 
 function replace_text_in_tirtos {
 	echo -e "Changing $1 to $2 in all tirtos source files"
-	grep --exclude-dir=".git" -exclude=*.a -rl "$1" ${TIRTOS_DIRECTORY} | xargs sed -i "s/$1/$2/g"
+	grep --exclude-dir=".git" --exclude=*.a -rl "$1" ${TIRTOS_DIRECTORY} | xargs sed -i "s/$1/$2/g"
 }
 
 # There's an invalid linked location in ${BLE_SDK_DIRECTORY}/examples/cc2650stk/sensortag_lcd/ccs/app/.project
