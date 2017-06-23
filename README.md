@@ -72,3 +72,7 @@ wine setup_simplelink_academy_01_11_00_0000.exe
 
 Success report
 https://e2e.ti.com/support/wireless_connectivity/bluetooth_low_energy/f/538/p/579411/2127950#2127950
+
+## Similar CC26xx projects
+
+https://github.com/Venemo/cc26xx-ble-stack-example
