@@ -30,7 +30,7 @@ TIRTOS_VERSION=tirtos_cc13xx_cc26xx_2_20_01_08
 XDCTOOLS_VERSION=xdctools_3_32_00_06_core
 XDCTOOLS_SOURCE=http://software-dl.ti.com/dsps/dsps_public_sw/sdo_sb/targetcontent/rtsc/3_32_00_06/index_FDS.html
 
-WINE_ROOT=~/wine/drive_c/ti
+WINE_ROOT=~/.wine/drive_c/ti
 
 BLE_SDK_DIRECTORY=${TI_ROOT_DIRECTORY}/simplelink/${BLE_SDK_VERSION}
 TIRTOS_DIRECTORY=${TI_ROOT_DIRECTORY}/${TIRTOS_VERSION}
@@ -149,11 +149,12 @@ replace_text_in_ble_sdk "PARENT-5-PROJECT_LOC\\/src\\/profiles\\/sensor_profile"
 replace_text_in_ble_sdk "PARENT-1-PROJECT_LOC\\/config\\/" "PARENT-2-ORG_PROJ_DIR\\/ccs\\/config\\/"
 
 # Need forward slashes rather than backslashes in library paths.  One is wrong, all the others look OK.
-replace_text_in_ble_sdk "\\\\rom\\\\\enc_lib\\\\cc26xx_ecc_rom_api.a" "\\/rom\\/enc_lib\\/cc26xx_ecc_rom_api.a"
+replace_text_in_ble_sdk "\\\\rom\\\\enc_lib\\\\cc26xx_ecc_rom_api.a" "\\/rom\\/enc_lib\\/cc26xx_ecc_rom_api.a"
 
 # Running the Windows lib_search executable under wine generates absolute paths with a Z: prefix, so run the python
 # source directly.  Also change backslashes to forward slashes in the searchpath elements that this application uses.
 replace_text_in_ble_sdk "&quot;\\\${TOOLS_BLE}\\/lib_search\\/lib_search.exe" "python \\&quot;\\\${TOOLS_BLE}\\/lib_search\\/src\\/lib_search.py"
+replace_text_in_ble_sdk "\\\${TOOLS_BLE}\\/frontier\\/frontier.exe" "python \\\${TOOLS_BLE}\\/frontier\\/src\\/frontier.py"
 sed -i "/searchpath/s/\\\\/\\//g"  ${BLE_SDK_DIRECTORY}/tools/lib_search/params_split_cc2640.xml
 sed -i "/searchpath/s/\\\\/\\//g"  ${BLE_SDK_DIRECTORY}/tools/lib_search/params_split_cc1350.xml
 

@@ -29,7 +29,7 @@ TIRTOS_VERSION=tirtos_cc13xx_cc26xx_2_18_00_03
 XDCTOOLS_VERSION=xdctools_3_32_00_06_core
 XDCTOOLS_SOURCE=http://software-dl.ti.com/dsps/dsps_public_sw/sdo_sb/targetcontent/rtsc/3_32_00_06/index_FDS.html
 
-WINE_ROOT=~/wine/drive_c/ti
+WINE_ROOT=~/.wine/drive_c/ti
 
 BLE_SDK_DIRECTORY=${TI_ROOT_DIRECTORY}/simplelink/${BLE_SDK_VERSION}
 TIRTOS_DIRECTORY=${TI_ROOT_DIRECTORY}/${TIRTOS_VERSION}
