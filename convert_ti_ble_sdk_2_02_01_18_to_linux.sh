@@ -149,7 +149,7 @@ replace_text_in_ble_sdk "PARENT-5-PROJECT_LOC\\/src\\/profiles\\/sensor_profile"
 replace_text_in_ble_sdk "PARENT-1-PROJECT_LOC\\/config\\/" "PARENT-2-ORG_PROJ_DIR\\/ccs\\/config\\/"
 
 # Need forward slashes rather than backslashes in library paths.  One is wrong, all the others look OK.
-replace_text_in_ble_sdk "\\\\rom\\\\\enc_lib\\\\cc26xx_ecc_rom_api.a" "\\/rom\\/enc_lib\\/cc26xx_ecc_rom_api.a"
+replace_text_in_ble_sdk "\\\\rom\\\\enc_lib\\\\cc26xx_ecc_rom_api.a" "\\/rom\\/enc_lib\\/cc26xx_ecc_rom_api.a"
 
 # Running the Windows lib_search executable under wine generates absolute paths with a Z: prefix, so run the python
 # source directly.  Also change backslashes to forward slashes in the searchpath elements that this application uses.
