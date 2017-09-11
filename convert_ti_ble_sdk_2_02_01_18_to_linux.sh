@@ -3,6 +3,7 @@
 # Source: https://e2e.ti.com/support/wireless_connectivity/bluetooth_low_energy/f/538/p/412962/1911528#1911528
 # Author: Norman Mackenzie
 # Author: Jonathan Cormier
+# Author: Biagio Montaruli
 
 # Pass this script the path to the ti directory.  It tries to modify the ble stack sources
 # to run under Linux.
