@@ -5,14 +5,14 @@
 # Author: Jonathan Cormier
 # Author: Biagio Montaruli
 
-# Pass this script the path to the ti directory.  It tries to modify the ble stack sources
+# Pass this script the path to the ti directory.  It tries to modify the simplelink academy sources
 # to run under Linux.
 
-# By default it assumes that the ble_sdk and tirtos directories have already been copied
-# from a wine installation of the ble stack.
+# By default it assumes that the ble_sdk, tirtos and simpelink_academy directories 
+# have already been copied from a wine installation of the ble stack and simplelink academy
 
 # If erase_it_all_and_copy_from_wine is passed as a second argument, then the script will
-# erase the current BLE stack and TI RTOS directories, REMOVING AND CHANGES YOU HAVE MADE,
+# erase the current Simplelink Academy directory, REMOVING AND CHANGES YOU HAVE MADE,
 # and get fresh copies from the default wine installation path.  Be careful with this.
 
 
@@ -112,6 +112,7 @@ replace_text_in_simplelink_package "OSAL\\.h" "osal.h"
 # Fix absolute Windows paths set for a default wine install by using paths relative to the imported project
 replace_text_in_simplelink_package "C:\\/ti" "\\\${TI_PRODUCTS_DIR}"
 
+echo -e "Updating tirtos_basic_lab1 project files"
 mv ${SIMPLELINK_SDK_MODULES_DIRECTORY}/projects/tirtos_basic_lab1/CCS ${SIMPLELINK_SDK_MODULES_DIRECTORY}/projects/tirtos_basic_lab1/ccs
 grep -l " Lab 1 EMK" ${SIMPLELINK_SDK_MODULES_DIRECTORY}/projects/tirtos_basic_lab1/ccs/01_rtos_basic_em* | xargs sed -i "s/ Lab 1 EMK/_Lab1_CC2650EMK/"
 grep -l " Lab 1 LAUNCHXL" ${SIMPLELINK_SDK_MODULES_DIRECTORY}/projects/tirtos_basic_lab1/ccs/01_rtos_basic_lp* | xargs sed -i "s/ Lab 1 LAUNCHXL/_Lab1_CC2650LAUNCHXL/"
